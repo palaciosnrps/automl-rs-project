@@ -5,7 +5,7 @@ from tensorflow.data import Iterator
 import tifffile as tiff
 
 
-class brazildam(tfds.core.GeneratorBasedBuilder):
+class brazildam_sentinel(tfds.core.GeneratorBasedBuilder):
   """DatasetBuilder for brazildam dataset."""
   MANUAL_DOWNLOAD_INSTRUCTIONS = """
   Go to https://drive.google.com/drive/folders/1v1F4faAD8zCm_vocGxILiIUncaRz1pZB and download 'sentinel_compressed.7z' to get the data. Place the
