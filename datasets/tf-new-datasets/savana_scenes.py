@@ -6,7 +6,10 @@ import csv
 
 class savana_scenes(tfds.core.GeneratorBasedBuilder):
   """DatasetBuilder for Brazilian Cerrado-Savanna Scenes Dataset."""
-
+  MANUAL_DOWNLOAD_INSTRUCTIONS = """
+  Download the file from https://homepages.dcc.ufmg.br/~keiller.nogueira/datasets/brazilian_cerrado_dataset.zip
+  homepages.dcc.ufmg.br uses an invalid security certificate.Place the file in the `manual_dir/` (~tensorflow_datasets/downloads/manual)
+  """
   VERSION = tfds.core.Version('1.0.0')
   RELEASE_NOTES = {
       '1.0.0': 'Initial release.',
@@ -50,7 +53,11 @@ class savana_scenes(tfds.core.GeneratorBasedBuilder):
 
   def _split_generators(self, dl_manager: tfds.download.DownloadManager):
     """Download the data and define splits."""
-    extracted_path = dl_manager.download_and_extract("https://homepages.dcc.ufmg.br/~keiller.nogueira/datasets/brazilian_cerrado_dataset.zip")
+    #data_path is a pathlib-like `Path('<manual_dir>/data.zip')`
+    archive_path = dl_manager.manual_dir / 'brazilian_cerrado_dataset.zip'
+    # Extract the manually downloaded `data.zip`
+    extracted_path = dl_manager.extract(archive_path)
+    #extracted_path = dl_manager.download_and_extract("https://homepages.dcc.ufmg.br/~keiller.nogueira/datasets/brazilian_cerrado_dataset.zip")
 #   extracted_path =Path('/home/ami-m-017/Documents/MsComputerScience/research')
     # dl_manager returns pathlib-like objects with `path.read_text()`,
     # `path.iterdir()`,...

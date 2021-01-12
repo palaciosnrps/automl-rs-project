@@ -56,10 +56,9 @@ class brazildam_sentinel(tfds.core.GeneratorBasedBuilder):
   def _split_generators(self, dl_manager: tfds.download.DownloadManager):
     """Download the data and define splits."""
     # data_path is a pathlib-like `Path('<manual_dir>/data.zip')`
-    archive_path = dl_manager.manual_dir / 'sentinel_compressed'
+    archive_path = dl_manager.manual_dir / 'sentinel_compressed-002.7z'
     # Extract the manually downloaded `data.zip`
-    extracted_path = dl_manager.extract(archive_path)
-    print( extracted_path)
+    extracted_path = dl_manager.manual_dir
     # dl_manager returns pathlib-like objects with `path.read_text()`,
     # `path.iterdir()`,...
     return {

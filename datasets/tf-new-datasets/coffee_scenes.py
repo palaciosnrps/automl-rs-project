@@ -23,7 +23,7 @@ class coffee_scenes(tfds.core.GeneratorBasedBuilder):
             'label': tfds.features.ClassLabel(names=['coffee', 'noncoffee']),
         }),
       supervised_keys=('image', 'label'),
-      homepage='http://www.patreo.dcc.ufmg.br/2017/11/12/brazilian-coffee-scenes-dataset/'
+      homepage='http://www.patreo.dcc.ufmg.br/2017/11/12/brazilian-coffee-scenes-dataset/',
       # Bibtex citation for the dataset
       citation=r"""
  @inproceedings{penatti2015deep,
