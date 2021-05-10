@@ -11,7 +11,7 @@ import tensorflow_datasets as tfds
 import sklearn.model_selection
 from tensorflow.keras.utils import to_categorical
 
-DATA_DIR='/scratch/palacios/data'
+DATA_DIR='/data'
 
 def create_dataset(NAME='eurosat_rgb',SPLIT=0.2):
     """This function loads and transform the datasets to create
@@ -30,10 +30,13 @@ def create_dataset(NAME='eurosat_rgb',SPLIT=0.2):
         'brazildam':'brazildam_sentinel',
         'coffee_scenes': 'coffee_scenes',
         'savana':'savana_scenes',
+        'so2sat_rgb':'so2sat/rgb',
+        'so2sat_all':'so2sat/all',
+        'ucmerced':'uc_merced',
         'croptype': 'crop_type'
     }
     data_tfds=tfds.as_numpy(tfds.load(DATA_NAMES[NAME], data_dir=DATA_DIR,batch_size=-1, as_supervised=True,shuffle_files=True))
-    if NAME in ['eurosat_rgb','eurosat_all','bigearthnet_rgb','bigearthnet_all']:    
+    if NAME in ['eurosat_rgb','eurosat_all','bigearthnet_rgb','bigearthnet_all','so2sat_rgb','so2sat_all','ucmerced']:    
         X_train,  X_test, y_train, y_test = sklearn.model_selection.train_test_split(data_tfds['train'][0],data_tfds['train'][1], test_size=SPLIT)
     else:
         def normalize(imgi):
@@ -52,10 +55,4 @@ def create_dataset(NAME='eurosat_rgb',SPLIT=0.2):
             for i in range(1,5):
                 X_train.extend(data_tfds['fold'+str(i)][0])
                 y_train.extend(data_tfds['fold'+str(i)][1])
-    return X_train, X_test, y_train, y_test
-
-x1,x2,y1,y2=create_dataset('coffee_scenes')
-print(len(x1))
-print(len(x2))
-print(len(y1))
-print(len(y2))
+    return np.asarray(X_train), np.asarray(X_test),np.asarray(y_train),np.asarray(y_test)
