@@ -1,7 +1,7 @@
-# AutoML-RS
-Repository for the Master thesis project: "Automated Machine Learning for Satellite Data: Integrating remote sensing pre-trained models into AutoML systems."
+# AutoML4EO
+Repository for the Master thesis project "Automated Machine Learning for Satellite Data: Integrating Remote Sensing Pre-trained Models into AutoML Systems"
 
-Current AutoML systems have been benchmarked with traditional natural image datasets. However, there are various differences between satellite images and natural images, for instance in the bit-wise resolution, the number and type of spectral bands, which open questions about the applicability of current AutoML systems for satellite data tasks. In this thesis, we demonstrate how AutoML can be leveraged for classification tasks on satellite data. Specifically, we deploy the Auto-Keras system for image classification tasks and create two new variants of it for satellite image classification that incorporate transfer learning using models pre-trained with (i) natural images (using ImageNet) and (ii) remote sensing datasets.
+Current AutoML systems have been benchmarked with natural image datasets. However, there are various differences between satellite images and natural images, for instance in the bit-wise resolution, the number and type of spectral bands, which open questions about the applicability of current AutoML systems for satellite data tasks. In this thesis, we demonstrate how AutoML can be leveraged for classification tasks on satellite data. Specifically, we deploy the Auto-Keras system for image classification tasks and create two new variants of it for satellite image classification that incorporate transfer learning using models pre-trained with (i) natural images (using ImageNet) and (ii) remote sensing datasets.
 For evaluation, we compared the performance of these variants against manually designed architectures on a benchmark set of 7 satellite datasets.
 
 ### Datasets ###
@@ -21,7 +21,7 @@ For evaluation, we compared the performance of these variants against manually d
 ### Contents ###
 The structure of this repository is the following:
 
--autokeras: Auto-Keras version with a new remote sensing block and a task specific 'SatelliteImageClassifier'.
+-autokeras: Auto-Keras variant with a new remote sensing block and a task specific 'SatelliteImageClassifier'.
 Modified version of [AutoKeras](https://github.com/keras-team/autokeras "AutoKeras") (H. Jin, Q. Song, and X. Hu. "Auto-keras: An efficient neural architecture search system." Proceedings of the 25th ACM SIGKDD International Conference on Knowledge Discovery & Data Mining. ACM, 2019.)
 
 -datasets: Code to build the datasets and scripts to add the missing data sources to 'tensorflow-datasets'
@@ -39,3 +39,7 @@ clf.fit(X1,y1)
 print(clf.evaluate(X2,y2))
 results =clf.predict(X2)
 ```
+### Cite this work ###
+Nelly R. Palacios Salinas (supervisors: Dr. Mitra Baratchi & Dr. Jan van Rijn & Dr. Andreas Vollrath)
+Automated Machine Learning for Satellite Data: Integrating remote sensing pre-trained models into AutoML systems.
+Master's Thesis in Computer Science at Leiden Institute of Advanced Computer Science, Leiden University, 2021. ([Download](https://ada.liacs.nl/papers/PalaciosEtAl21.pdf,"PDF"))
