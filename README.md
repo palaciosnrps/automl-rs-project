@@ -44,7 +44,5 @@ Nelly R. Palacios Salinas (supervisors: Dr. Mitra Baratchi & Dr. Jan van Rijn & 
 Automated Machine Learning for Satellite Data: Integrating remote sensing pre-trained models into AutoML systems.
 Master's Thesis in Computer Science at Leiden Institute of Advanced Computer Science, Leiden University, 2021. ([Download](https://ada.liacs.nl/papers/PalEtAl21b.pdf))
 
-Nelly Rosaura Palacios Salinas, Mitra Baratchi, Jan N. van Rijn & Andreas Vollrath
-Automated Machine Learning for Satellite Data: Integrating remote sensing pre-trained models into AutoML systems.
-In Proceedings of the European Conference on Machine Learning and Principles and Practice of Knowledge Discovery in Databases. 2021, to appear. ([Download](https://ada.liacs.nl/papers/PalEtAl21.pdf))
+Palacios Salinas N.R., Baratchi M., van Rijn J.N., Vollrath A. (2021) Automated Machine Learning for Satellite Data: Integrating Remote Sensing Pre-trained Models into AutoML Systems. In: Dong Y., Kourtellis N., Hammer B., Lozano J.A. (eds) Machine Learning and Knowledge Discovery in Databases. Applied Data Science Track. ECML PKDD 2021. Lecture Notes in Computer Science, vol 12979. Springer, Cham. https://doi.org/10.1007/978-3-030-86517-7_28 ([Download](https://ada.liacs.nl/papers/PalEtAl21.pdf))
 
