@@ -3,6 +3,22 @@ title: >-
   Automated Machine Learning for Satellite Data:
   Integrating Remote Sensing Pre-trained Models into
   AutoML Systems
+authors:
+ - given-names: "Nelly Rosaura"
+   family-names: "Palacios Salinas"
+   email: "n.r.palacios.salinas@umail.leidenuniv.nl"
+   affiliation: "Leiden Institute of Advanced Computer Science, Leiden University"
+ - given-names: "Mitra"
+   family-names: "Baratchi"
+   affiliation: "Leiden Institute of Advanced Computer Science, Leiden University"
+   orcid: 'https://orcid.org/0000-0002-1279-9310'
+  - given-names: "Jan N."
+    family-names: "van Rijn"
+    affiliation: "Leiden Institute of Advanced Computer Science, Leiden University"
+    orcid: 'https://orcid.org/0000-0003-2898-2168'
+  - given-names: "Andreas"
+    family-names: "Vollrath"
+    affiliation: 'Phi-Lab, ESA/ESRIN'
 repository-code: 'https://github.com/palaciosnrps/automl-rs-project'
 message: >-
   If you refer to this repository in a publication, please cite this software using the metadata from
