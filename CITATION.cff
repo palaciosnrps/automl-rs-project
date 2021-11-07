@@ -7,38 +7,30 @@ message: >-
   If you refer to this repository in a publication, please cite this software using the metadata from
   'preferred-citation'.
 preferred-citation:
-	type: Conference paper
+	type: "Conference paper"
 	authors:
-  	- given-names: Nelly Rosaura
-          family-names: Palacios Salinas
-    	  email: n.r.palacios.salinas@umail.leidenuniv.nl
-    	  affiliation: >-
-      		Leiden Institute of Advanced Computer Science,
-      		Leiden University
-  	- given-names: Mitra
-    	  family-names: Baratchi
-          affiliation: >-
-      		Leiden Institute of Advanced Computer Science,
-      		Leiden University
+  	- given-names: "Nelly Rosaura"
+          family-names: "Palacios Salinas"
+    	  email: "n.r.palacios.salinas@umail.leidenuniv.nl"
+    	  affiliation: "Leiden Institute of Advanced Computer Science, Leiden University"
+  	- given-names: "Mitra"
+    	  family-names: "Baratchi"
+          affiliation: "Leiden Institute of Advanced Computer Science, Leiden University"
     	  orcid: 'https://orcid.org/0000-0002-1279-9310'
-  	- given-names: Jan N.
-  	  family-names: van Rijn
-   	  affiliation: >-
-      		Leiden Institute of Advanced Computer Science,
-      		Leiden University
+  	- given-names: "Jan N."
+  	  family-names: "van Rijn"
+   	  affiliation: "Leiden Institute of Advanced Computer Science, Leiden University"
  	  orcid: 'https://orcid.org/0000-0003-2898-2168'
- 	- given-names: Andreas
-   	  family-names: Vollrath
+ 	- given-names: "Andreas"
+   	  family-names: "Vollrath"
    	  affiliation: 'Phi-Lab, ESA/ESRIN'
-	title: >-
-  		Automated Machine Learning for Satellite Data:
-  		Integrating Remote Sensing Pre-trained Models into AutoML Systems
+	title: "Automated Machine Learning for Satellite Data:Integrating Remote Sensing Pre-trained Models into AutoML Systems"
 	booktitle: 'Machine Learning and Knowledge Discovery in Databases. Applied Data Science Track'
 	year: 2021
 	publisher: 'Springer International Publishing'
-	pages: 447--462
+	pages: "447--462"
 	abstract: >-
-  	Current AutoML systems have been benchmarked with traditional natural image datasets. Differences
+	Current AutoML systems have been benchmarked with traditional natural image datasets. Differences
   	between satellite images and natural images (e.g., bit-wise resolution, the number, and type of
   	spectral bands) and lack of labeled satellite images for training models, pose open questions
   	about the applicability of current AutoML systems on satellite data. In this paper, we demonstrate
@@ -52,7 +44,7 @@ preferred-citation:
   	satellite data search space in AutoML systems. Our RS-AK variant performed better than IMG-AK for
   	small datasets with a limited amount of training data. Furthermore, it found the best-automated
   	model for the datasets composed of near-infrared, green, and red bands.
-	isbn: 978-3-030-86517-7
-	doi: 10.1007/978-3-030-86517-7_28 
+	isbn: "978-3-030-86517-7"
+	doi: "10.1007/978-3-030-86517-7_28" 
 
 repository-code: 'https://github.com/palaciosnrps/automl-rs-project'
