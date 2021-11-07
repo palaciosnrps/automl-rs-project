@@ -3,11 +3,12 @@ title: >-
   Automated Machine Learning for Satellite Data:
   Integrating Remote Sensing Pre-trained Models into
   AutoML Systems
+repository-code: 'https://github.com/palaciosnrps/automl-rs-project'
 message: >-
   If you refer to this repository in a publication, please cite this software using the metadata from
   'preferred-citation'.
 preferred-citation:
-	type: "Conference paper"
+	type: conference-paper
 	authors:
   	- given-names: "Nelly Rosaura"
           family-names: "Palacios Salinas"
@@ -28,23 +29,8 @@ preferred-citation:
 	booktitle: 'Machine Learning and Knowledge Discovery in Databases. Applied Data Science Track'
 	year: 2021
 	publisher: 'Springer International Publishing'
-	pages: "447--462"
-	abstract: >-
-	Current AutoML systems have been benchmarked with traditional natural image datasets. Differences
-  	between satellite images and natural images (e.g., bit-wise resolution, the number, and type of
-  	spectral bands) and lack of labeled satellite images for training models, pose open questions
-  	about the applicability of current AutoML systems on satellite data. In this paper, we demonstrate
-  	how AutoML can be leveraged for classification tasks on satellite data. Specifically, we deploy
-  	the Auto-Keras system for image classification tasks and create two new variants, IMG-AK and
-  	RS-AK, for satellite image classification that respectively incorporate transfer learning using
-  	models pre-trained with (i) natural images (using ImageNet) and (ii) remote sensing datasets. For
-  	evaluation, we compared the performance of these variants against manually designed architectures on
-  	a benchmark set of 7 satellite datasets. Our results show that in 71{\%} of the cases the AutoML
-  	systems outperformed the best previously proposed model, highlighting the usefulness of a customized
-  	satellite data search space in AutoML systems. Our RS-AK variant performed better than IMG-AK for
-  	small datasets with a limited amount of training data. Furthermore, it found the best-automated
-  	model for the datasets composed of near-infrared, green, and red bands.
+	start: 447
+	end: 462
 	isbn: "978-3-030-86517-7"
-	doi: "10.1007/978-3-030-86517-7_28" 
+	doi: "10.1007/978-3-030-86517-7_28"
 
-repository-code: 'https://github.com/palaciosnrps/automl-rs-project'
